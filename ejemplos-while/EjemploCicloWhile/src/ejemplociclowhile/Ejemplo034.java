@@ -29,6 +29,12 @@ public class Ejemplo034 {
         System.out.println("Ingrese el Limite"); 
         limite = entrada.nextInt(); 
         
+        if (limite >0 && limite <=10){
+            System.out.println("correcto");
+        }else{
+            System.out.println("limite Incorrecto");
+            limite = 3;
+        }
         while (contador <= limite) {
             System.out.println("Ingrese el valor a sumar");
             valor_ingresado = entrada.nextInt(); // 20
